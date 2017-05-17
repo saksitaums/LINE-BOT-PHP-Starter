@@ -1,6 +1,7 @@
 <?php
 $access_token = 'XNhkwPW2XEiQ4ucjc0+IHLpHfMVY5UzXvQHJ5v8TwKqg0ME0EinfbyxIqZES7d5BAZ1oooj4uAfd+6W5TLhtR0Q2K2QGH4kP6gGE0PQbwtWgBnos/znVRFdp04e6Kywu9Aw0A/UuJ+3GE9Nso7VYrwdB04t89/1O/w1cDnyilFU=';
- // Get POST body content
+ 
+// Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
