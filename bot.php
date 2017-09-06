@@ -9,19 +9,11 @@
       if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
         $text = $event['message']['text'];
         $replyToken = $event['replyToken'];
-        $mes = "";
-        if($text == "A")
-        {
-          mes += "OK"
-        }
-        else{
-          mes += "Error"
-        }
-        
-        $messages = ['type' => 'text','text' => $mes];
+
+        $messages = ['type' => 'text','text' => $text];
         
         $url = 'https://api.line.me/v2/bot/message/reply';   
-        $data = ['replyToken' => $replyToken,'messages' => [$messages]];
+        $data = ['replyToken' => $replyToken,'messages' => [$messages],];
         
       }
     
