@@ -12,10 +12,10 @@
         $mes = "";
         if($text == "A")
         {
-          $mes += "OK"
+          mes += "OK"
         }
         else{
-          $mes += "Error"
+          mes += "Error"
         }
         
         $messages = ['type' => 'text','text' => $mes];
