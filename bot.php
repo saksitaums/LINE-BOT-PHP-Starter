@@ -16,6 +16,14 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			$mes = "";
+			if($text == "A"){
+				$mes = "สวัสดีครับ";
+			}
+			else{
+				$mes = "ไม่พบข้อมูล";
+			}
+			
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
