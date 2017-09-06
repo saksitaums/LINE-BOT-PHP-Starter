@@ -29,14 +29,20 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => $mes
 			];
+			
+			$images = [
+				'type' => 'image',
+				'originalContentUrl' => "http://www.scg.com/sufficiency/images/news4.jpg?1504687985",
+				'previewImageUrl' => "http://www.scg.com/sufficiency/images/news4.jpg?1504687985"
+			];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
-				'previewImageUrl' => ["http://www.scg.com/sufficiency/images/news4.jpg?1504687985"],
+				'messages' => [$images],
 			];
+			
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
