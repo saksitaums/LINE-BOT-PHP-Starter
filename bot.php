@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 			$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
-				'imageFile' => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6wA27ZeQvzqw1pz0vKROXVB7wsoynaia9GEr3S7MuIzHkGrCK"
+				'imageFile' => "https://cdn.pixabay.com/photo/2015/09/29/15/09/owl-964012_960_720.jpg"
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
