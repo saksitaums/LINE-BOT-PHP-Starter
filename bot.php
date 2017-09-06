@@ -35,6 +35,7 @@ if (!is_null($events['events'])) {
 			$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
+				'imageFile' => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6wA27ZeQvzqw1pz0vKROXVB7wsoynaia9GEr3S7MuIzHkGrCK"
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
