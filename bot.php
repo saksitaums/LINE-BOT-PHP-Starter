@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 				$mes = "สวัสดีครับ";
 			}
 			else{
-				$mes = "ไม่พบข้อมูล";
+				$mes = "ไม่พบข้อมูล BB";
 			}
 			
 			// Build message to reply back
@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 			$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
-				'imageFile' => "https://cdn.pixabay.com/photo/2015/09/29/15/09/owl-964012_960_720.jpg"
+				'imageFile' => ["http://www.scg.com/sufficiency/images/news4.jpg?1504687985"],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
