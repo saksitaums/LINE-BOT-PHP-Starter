@@ -20,6 +20,12 @@ if (!is_null($events['events'])) {
 			if($text == "A"){
 				$mes = "สวัสดีครับ";
 			}
+			if($text == "B"){
+				$mes = "สบายดีรึป่าว?";
+			}
+			if($text == "C"){
+				$mes = "ทดสอบ";
+			}
 			else{
 				$mes = "ไม่พบข้อมูล CC";
 			}
